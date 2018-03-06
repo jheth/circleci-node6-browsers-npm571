@@ -16,3 +16,5 @@ RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh
    && npm -g install npm@5.7.1 \
    && sudo rm /usr/local/bin/npm; sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/npm" "/usr/local/bin/npm"
 
+RUN sudo npm install -g bower
+
